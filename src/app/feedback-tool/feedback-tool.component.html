@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-form-field appearance="outline">
+      <mat-label>Subject Teacher</mat-label>
+      <input matInput [(ngModel)] = "newtitle">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Subject Knowledge</mat-label>
+      <input matInput [(ngModel)] = "newscore" type = "number">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Quality Of Instruction</mat-label>
+      <input matInput [(ngModel)] = "newquality" type = "number">
+    </mat-form-field>
+    
+
+    <mat-form-field appearance="outline">
+      <mat-label>creativity</mat-label>
+      <input matInput [(ngModel)] = "newcreativity" type = "number">
+    </mat-form-field>
+    
+    <mat-form-field appearance="outline">
+      <mat-label>Approachable</mat-label>
+      <input matInput [(ngModel)] = "newapproach" type = "number">
+    </mat-form-field>
+    
+    <br />
+    <button mat-raised-button color="primary" (click)="add()">ADD ENTRY</button>
+</mat-card>
+<p>Average score: {{avg}}</p>
